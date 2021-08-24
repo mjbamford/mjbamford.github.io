@@ -1,39 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Michael Bamford Resume</title>
     <meta name="author" content="Michael Bamford">
     <meta name="description" content="Michael Bamford Resume">
+    <link href="styles.css" rel="stylesheet">
 </head>
-    
+
 <body>
-    <header>
-        <div><div>M</div><div>B</div></div>
-        <h1>
-            Michael Bamford
-        </h1>
-    </header>
-    <main>
-        <!-- First Column -->
-        <div>
-            <section>
-                <h2>About Me</h2>
-                <h3>Educator</h3>
-                <time>Since 2017</time>
-                <p>Educator at CoderAcademy and loving it!</p>
-            </section>
-        </div>
+    <div id="container">
+        <header>
+            <div class="initials-container">
+                <span>M</span>
+                <span>B</span>
+            </div>
+            <h1>
+                <span id="first-name" class="first-name" data-myattr="hello world">Michael</span>
+                <span class="last-name">Bamford</span>
+            </h1>
+            <img src="headshot.png" alt="Headshot" class="headshot" />
+        </header>
+        <main>
+            <div>
+                <section>
+                    <h2>About Me</h2>
+                    <article>
+                        <header>
+                            <h3>Educator</h3>
+                            <time>Since&nbsp;2017</time>
+                        </header>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias corrupti non nam ea illo dolorem aliquam laboriosam fugit voluptas repellendus rem temporibus asperiores quo vero officia, ullam eligendi. Quisquam, qui.</p>
+                    </article>
 
-        <!-- Second Column -->
-        <div>
-            <i>Second Column</i>
-        </div>
-    </main>
+                    <article>
+                        <header>
+                            <h3>CTO</h3>
+                            <time>2015&nbsp;&ndash;&nbsp;2017</time>
+                        </header>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta tenetur, adipisci possimus tempore assumenda rerum aut ut porro eveniet doloremque.</p>
+                    </article>
+                </section>
 
-    <img src="headshot.png" alt="Headshot" />
-    <footer>&copy; 2021 Michael Bamford</footer>
+                <section>
+                    <h2>Experience</h2>
+                    <article>
+                        <header>
+                            <h3>CoderAcademy</h3>
+                            <time>Since&nbsp;2017</time>
+                        </header>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias corrupti non nam ea illo dolorem aliquam laboriosam fugit voluptas repellendus rem temporibus asperiores quo vero officia, ullam eligendi. Quisquam, qui.</p>
+                    </article>
+
+                    <article>
+                        <header>
+                            <h3>Waivpay</h3>
+                            <time>2015&nbsp;&ndash;&nbsp;2017</time>
+                        </header>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta tenetur, adipisci possimus tempore assumenda rerum aut ut porro eveniet doloremque.</p>
+                    </article>
+
+                    <article>
+                        <header>
+                            <h3>Westfield</h3>
+                            <time>2012&nbsp;&ndash;&nbsp;2015</time>
+                        </header>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit vero culpa debitis, eius rem qui esse possimus enim laborum adipisci accusantium delectus suscipit praesentium iure architecto voluptas, laudantium eaque aperiam?</p>
+                    </article>
+                </section>
+
+                <section>
+                    <h2>Education</h2>
+                    <article>
+                        <header>
+                            <h3>University of Sydney</h3>
+                            <time>2015&nbsp;&ndash;&nbsp;2018</time>
+                            <span class="gray-400">&nbsp;|&nbsp;</span>
+                            <span class="gray-400 text-lg">Master&rsquo;s of Business Administratione</span>
+                        </header>
+                    </article>
+
+                    <article>
+                        <header>
+                            <h3>University of NSW</h3>
+                            <time>2005&nbsp;&ndash;&nbsp;2009</time>
+                            <span class="gray-400">&nbsp;|&nbsp;</span>
+                            <span class="gray-400 text-lg">Master&rsquo;s of Computer Science</span>
+                        </header>
+                    </article>
+                </section>
+
+                <section>
+                    <h2>Skills</h2>
+                    <article>
+                        <header>
+                            <h3>Javascript</h3>
+                            <span class="gray-400 text-lg">Middle Level</span>
+                            <p>Good parts: pure function, higher-order functions, factory functions, composition. Bad parts: inheritance, this, new.</p>
+                            <ul class="skills">
+                                <li>ES6</li>
+                                <li>Vue</li>
+                                <li>Functional Programming</li>
+                                <li>Node</li>
+                            </ul>
+                        </header>
+                    </article>
+
+                    <article>
+                        <header>
+                            <h3>Other</h3>
+                            <ul class="skills">
+                                <li>CSS</li>
+                                <li>Rust</li>
+                                <li>Git</li>
+                                <li>Go</li>
+                                <li>Linux Server</li>
+                                <li>UI Design</li>
+                                <li>Photoshop</li>
+                                <li>Illlustrator</li>
+                                <li>Figma</li>
+                                <li>Typography</li>
+                            </ul>
+                        </header>
+                    </article>
+                </section>
+
+            </div>
+        </main>
+        <footer>&copy; 2021 Michael Bamford</footer>
+    </div>
 </body>
 
 </html>
