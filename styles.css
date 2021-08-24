@@ -1,3 +1,7 @@
+:root {
+    --gray: lightgray;
+}
+
 @font-face {
   font-family: "FiraGo";
   font-weight: 400;
@@ -81,9 +85,8 @@ time {
     margin: 0 auto 2.75rem;
 }
 
-#container > header img {
+#container > header :last-child {
     margin-left: auto;
-    width: 4rem;
 }
 
 #container > header h1 {
@@ -113,24 +116,105 @@ article h3 {
 }
 
 article p,
-article .skills {
+article li {
     color: #4a5568;
     margin: 0 0 1.125rem;
     line-height: 1.4;
     font-size: 1.1rem;
 }
 
-article ul.skills {
+#container > header img.headshot {
+    width: 4rem;
+}
+
+article > img.headshot {
+    display: none;
+    width: 10rem;
+}
+
+.experience li::marker {
+    content: '\0203A'
+}
+
+ul.experience {
+    padding: 0;
+}
+
+ul.experience li {
+    padding-left: 0.35rem;
+}
+
+ul.skills {
     margin-top: 1rem;
     margin-left: 0;
     padding: 0;
+    font-size: 1rem;
 }
-.skills li {
-    display: inline;
-    padding: 0.35rem;
+ul.skills li {
+    display: inline-block;
+    padding: 0 0.35rem;
+    margin-right: 0.35rem;
+    margin-bottom: 0.35rem;
     background-color: rgba(229, 231, 235);
 }
 
-.skills li::marker {
+ul.skills li::marker {
     content: '';
+}
+
+/* Columns */
+
+@media (min-width: 768px) {
+    #container {
+        padding-left: 6rem;
+        padding-right: 6rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    #container {
+        padding-left: 0rem;
+        padding-right: 0rem;
+
+    }
+
+    /* main as flex requires the two column divs in the html */
+    main.x {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 2rem;
+    }
+
+    main.x {
+        display: grid;
+        /* grid-template-columns: 1fr 1fr; */
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-auto-flow: row;
+        /* grid-template-rows: repeat(2, minmax(0, 1fr)); */
+        /* grid-auto-flow: column; */
+        gap: 2rem;
+    }
+
+    main.x {
+        columns: 2 auto;
+        gap: 2rem;
+    }
+
+    section {
+        break-inside: avoid;;
+    }
+
+    #container > header img {
+        display: none;
+    }
+
+    article > img.headshot {
+        display: block;
+    }
+} 
+
+main > div {
+    flex: 1 1 0;
 }
